@@ -2,7 +2,7 @@ $('#egale').on('click', function(){
     var nombre1 = parseInt($('#nombre1').val());
     var nombre2 = parseInt($('#nombre2').val());
     var operateur = $('#operateur').val();
-    if(nombre1=='' || nombre2=='')
+    if(nombre1=='' || nombre2=='' || isNaN(nombre1) || isNaN(nombre2))
     {
         $('#resultat').html('Veillez remplir les champs vide.');
     }
